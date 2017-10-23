@@ -46,6 +46,9 @@ nano eula.txt
 //没有nano可使用vi文本编辑器，或者yum install nano下载
 //nano 退出保存流程 Ctrl+x退出 -> 键入y确定 -> 回车
 ```
+## 修改server.properties
+把mode-online=true 改为 mode-online=false
+
 ## 启动文件
 ```
 java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
