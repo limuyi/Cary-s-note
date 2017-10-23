@@ -31,7 +31,7 @@ mkdir server  # 把server相关东西都放进去
 cd server
 ```
 ## 下载minecraft的server文件
-可以去https://minecraft.net/download找最新版本
+可以去 https://minecraft.net/download 找最新版本
 
 wget命令下载慢的话可先下载到本地再用rz命令上传
 ```
@@ -86,16 +86,16 @@ java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
 
 # 启动流程
 
-## 新建screen
+## 第一次启动
+1.新建screen
 ```
 screen -S Minecraft
 ```
-## 打开server文件夹
-
+2.打开server文件夹
 ```
 cd usr/games/minecraft/server
 ```
-## 启动服务器
+3.启动服务器
 启动脚本
 ```
 ./start.sh
@@ -106,6 +106,20 @@ cd usr/games/minecraft/server
 java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
 ```
 
+## 重新进入服务器
+如果服务器已启动，或者关闭了但是没有退出Minecraft这个会画
+
+1.检查当前按会话，查看Minecraft的话还存不存在
+```
+screen -ls
+```
+2.进入该会话
+```
+screen -r Minecraft
+```
+此时就恢复了退出前的状态
+
+3.若没有查询到会话请按第一次启动方法重新新建会话并启动服务
 # 附录
 
 ## screen常用命令
