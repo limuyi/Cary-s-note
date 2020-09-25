@@ -20,7 +20,7 @@
 
 ### 创建一个新镜像
 
-`docker commit -a "author_name" -m "update_description" target_image_id new_image_name:tag`
+`docker commit -a "author_name" -m "update_description" target_docker_id new_image_name:tag`
 
 -a：镜像作者
 
