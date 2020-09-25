@@ -20,7 +20,7 @@
 
 ### 创建一个新镜像
 
-`docker commit -a "author_name" -m "uodate_description" target_image_id new_image_name:tag`
+`docker commit -a "author_name" -m "update_description" target_image_id new_image_name:tag`
 
 -a：镜像作者
 
@@ -74,7 +74,7 @@
 
 ### 创建容器
 
-`docker run --name docker_name -it bash image_name:tag` 
+`docker run --name docker_name -it image_name:tag bash` 
 
 -i：以交互模式
 
